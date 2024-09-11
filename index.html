@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Книжный магазин</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section class="booksHome" id="booksHome">
+        <div class="book">
+            <img src="src/pic1.png" alt="book">
+            <div class="textBooksHome1">
+                <h2>Превращение.</h2>
+                <p>Самое известное произведение Франца Кафки.Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло. Его многочисленные, убого тонкие по сравнению с остальным телом ножки беспомощно копошились у него перед глазами</p>
+                <p>8/10</p>
+                <input id="openBook1" class="openBook" type="button" value="Открыть."> 
+            </div>
+        </div>
+        <div class="book">
+            <img src="src/pic2.png" alt="book">
+            <div class="textBooksHome">
+                <h2>Ёжик в тумане.</h2>
+                <p>Всем с детства знаком мультфильм.Теперь полюбившийся всем мультфильм "Ежик в тумане" на страницах книги! Увлекательная и смешная история про ежика, который был чересчур пугливым и любопытным.</p>
+                <p>8/10</p>
+                <input id="openBook2" class="openBook" type="button" value="Открыть."> 
+            </div>
+        </div>
+        <div class="book">
+            <img src="src/pic3.png" alt="book">
+            <div class="textBooksHome">
+                <h2>Колобок.</h2>
+                <p>Знаменитый непоседа Колобок от студии "Пилот" вновь отправляется в опасное путешествие - теперь по книжным страницам, приглашая с собой читателей всех возрастов. Книга подготовлена по великолепному мультфильму, вышедшему на экраны в 2012 году.</p>
+                <p>8/10</p>
+                <input id="openBook3" class="openBook" type="button" value="Открыть."> 
+            </div>
+            
+        </div>
+        <div  id="book4"></div>
+       
+        <input id="addBook" class="addBook" type="button" value="Добавить книгу">
+    </section>
+
+    <main class="main">
+        <div class="infoCards">
+            <div class="infoBox infoBox1" id="infoBox1">
+                <img src="src/pic1.png" alt="book">
+                <div class="textBox">
+                    <h2>Превращение.</h2>
+                    <p>Самое известное произведение Франца Кафки.Самое известное произведение Франца Кафки.Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло. Его многочисленные, убого тонкие по сравнению с остальным телом ножки беспомощно копошились у него перед глазами</p>
+                </div>
+            </div>
+            <div class="infoBox infoBox2" id="infoBox2">
+                <img src="src/pic2.png" alt="book">
+                <div class="textBox">
+                    <h2>Ёжик в тумане.</h2>
+                    <p>Всем с детства знаком мультфильм.Всем с детства знаком мультфильм.Теперь полюбившийся всем мультфильм "Ежик в тумане" на страницах книги! Увлекательная и смешная история про ежика, который был чересчур пугливым и любопытным.</p>
+                </div>
+            </div>
+            <div class="infoBox infoBox3" id="infoBox3">
+                <img src="src/pic3.png" alt="book">
+                <div class="textBox">
+                    <h2>Колобок.</h2>
+                    <p>Знаменитый непоседа Колобок от студии "Пилот" вновь отправляется в опасное путешествие - теперь по книжным страницам, приглашая с собой читателей всех возрастов. Книга подготовлена по великолепному мультфильму, вышедшему на экраны в 2012 году.</p>
+                </div>
+               </div>
+               <div class="infoBox infoBox4" id="infoBox4"></div>
+            </div>
+        
+    </main>
+
+    <div class="formContainer " id="formContainer">
+        <h2>Добавить книгу.</h2>
+        <div class="bookName">
+            <h4>Название книги.</h4>
+            <input type="text" id="title" placeholder="Название" required>
+        </div>
+        <div class="bookDescription">
+            <h4>Описание книги.</h4>
+            <textarea id="text" cols="10" rows="5"></textarea>
+        </div>
+        <div class="howIsBook">
+            <select id="options">
+                <option value="" disabled selected>Oценка:</option>
+                <option value="1/10">1/10</option>
+                <option value="2/10">2/10</option>
+                <option value="3/10">3/10</option>
+                <option value="4/10">4/10</option>
+                <option value="5/10">5/10</option>
+                <option value="6/10">6/10</option>
+                <option value="7/10">7/10</option>
+                <option value="8/10">8/10</option>
+                <option value="9/10">9/10</option>
+                <option value="10/10">10/10</option>
+            </select>
+        </div>
+        <div class="addPhoto">
+            <h4>Добавить фото.</h4>
+            <input type="file" id="addPhoto" accept="image/*">
+        </div>
+        <button class="add" id="add">Добавить блок</button>
+    </div>
+
+    <script src="./buttons.js"></script>
+</body>
+</html>
